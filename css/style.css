@@ -160,9 +160,10 @@ table {
   /* position: fixed; */
   /* left:40%; */
   font-size: 7em;
-  font-family: 'Creepster', cursive;
+  font-family: 'Permanent Marker', cursive;
   color: #dc404b;
   text-decoration: underline;
+  padding: 16px;
 
 }
 
