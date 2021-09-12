@@ -155,6 +155,16 @@ table {
   width: 100%;
 }
 
+#kathName {
+  /* position: fixed; */
+  /* left:40%; */
+  font-size: 7em;
+  font-family: 'Creepster', cursive;
+  color: #dc404b;
+  text-decoration: underline;
+
+}
+
 th {
   font-size: 3em;
   font-family: 'Hina Mincho', serif;  
@@ -171,6 +181,9 @@ a {
 a:hover {
   background: #fdf764;
   color: #e8534a;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
 }
 
 th, td {
