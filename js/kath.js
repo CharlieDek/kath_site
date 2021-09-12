@@ -20,7 +20,7 @@ particlesJS('particles-js', {
           "nb_sides": 5
         },
         "image": {
-        "src": "js/img/waffle.png",
+        "src": "js/img/waffle.png", // http://pngimg.com/uploads/waffle/waffle_PNG49.png
           "width": 130,
           "height": 100
         }

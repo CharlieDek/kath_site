@@ -137,6 +137,7 @@ canvas{
 #frontOfParticles {
   position: absolute;
   top: 0%;
+  left: 0%;
   /* width: 75%; */
   /* left: 12.5%; */
   /* color: #000000; */
@@ -158,15 +159,13 @@ th {
   font-size: 3em;
   font-family: 'Hina Mincho', serif;  
   color: #e8534a;
-  background-color: #ffe09e;
-
 }
 
 a {
   font-size: 2em;
   font-family: 'Hina Mincho', serif;
   color: #4d5398;
-  background-color: #ffe09e;
+  background-color: #ffe09e77;
 }
 
 a:hover {
