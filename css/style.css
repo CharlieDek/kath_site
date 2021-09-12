@@ -38,7 +38,8 @@ a{
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
-  text-decoration:none
+  text-decoration:none;
+  z-index: 10;
 }
 
 mark{
@@ -119,30 +120,31 @@ canvas{
 
 /* ---- particles.js container ---- */
 
-/* #particles-js{
+#particles-js{
+  position: fixed;
+  /* z-index: -1; */
   width: 100%;
   height: 100%;
-  background-color: #fffff5;
-  background-image: url('');
+  background-color: #ffe09e;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-} */
+}
 
 /* ---- Start reg custom site content elems ----*/
 
 /* consider outlines like https://pudding.cool/2021/03/love-and-ai/ */
-/* #allContent {
+#frontOfParticles {
   position: absolute;
-  top: 45%;
-  width: 75%;
-  left: 12.5%;
-  color: #000000;
-  font-family: 'Source Code Pro', monospace;  
-  font-size: .9em;
-  text-align: left;
-  font-weight: bold;
-} */
+  top: 0%;
+  /* width: 75%; */
+  /* left: 12.5%; */
+  /* color: #000000; */
+  /* font-family: 'Source Code Pro', monospace;   */
+  /* font-size: .9em; */
+  /* text-align: left; */
+  /* font-weight: bold; */
+}
 
 
 /* ---- Start small custom site content elems ---- */
@@ -156,17 +158,22 @@ th {
   font-size: 3em;
   font-family: 'Hina Mincho', serif;  
   color: #e8534a;
+  background-color: #ffe09e;
+
 }
 
 a {
   font-size: 2em;
-  color: #4d5398;
   font-family: 'Hina Mincho', serif;
+  color: #4d5398;
+  background-color: #ffe09e;
 }
 
 a:hover {
   background: #fdf764;
   color: #e8534a;
+  animation: animate__rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */  
 }
 
 th, td {
@@ -176,5 +183,102 @@ th, td {
 
 /* Start small screen section */
 @media only screen and (max-width: 430px) {}
+
+
+/* ---- Start copied animations ---- */
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animate__rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
 
 /* ---- End copied animations ---- */
