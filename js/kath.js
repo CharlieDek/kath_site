@@ -1,7 +1,9 @@
+// TODO programatically mess with borders
+
 particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 25,
+        "value": 20,
         "density": {
           "enable": true,
           "value_area": 800
@@ -20,7 +22,7 @@ particlesJS('particles-js', {
           "nb_sides": 5
         },
         "image": {
-        "src": "js/img/waffle.png", // http://pngimg.com/uploads/waffle/waffle_PNG49.png
+        "src": "js/img/fish.png", // http://pngimg.com/uploads/waffle/waffle_PNG49.png
           "width": 130,
           "height": 100
         }
@@ -36,7 +38,7 @@ particlesJS('particles-js', {
         }
       },
       "size": {
-        "value": 15,
+        "value": 25,
         "random": true,
         "anim": {
           "enable": false,
@@ -55,7 +57,7 @@ particlesJS('particles-js', {
       "move": {
         "enable": true,
         "speed": 1.4,
-        "direction": "bottom-left",
+        "direction": "left",
         "random": false,
         "straight": false,
         "out_mode": "out",
