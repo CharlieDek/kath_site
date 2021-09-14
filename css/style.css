@@ -125,7 +125,7 @@ canvas{
   /* z-index: -1; */
   width: 100%;
   height: 100%;
-  background-color: #161D6B;
+  background-color: #fdb9c8;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ table {
   /* left:40%; */
   font-size: 7em;
   font-family: 'Permanent Marker', cursive;
-  color: #ff0000;
+  color: #8dff55;
   text-decoration: underline;
   padding: 16px;
 
@@ -171,18 +171,19 @@ th {
   font-size: 3em;
   font-family: 'Hina Mincho', serif;  
   color: #e8534a;
+  background-color: #fdb9c8;
 }
 
 a {
   font-size: 2em;
   font-family: 'Hina Mincho', serif;
-  color: #f99d44;
-  background-color: #161c6b;
+  color: #161c6b;
+  background-color: #fdb9c8c9;
 }
 
 a:hover {
-  background: #fdf764;
-  color: #e8534a;
+  background: #8dff55;
+  color: #f76629;
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 
