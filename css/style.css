@@ -32,14 +32,19 @@ blockquote:before,blockquote:after,q:before,q:after{
   content:none
 }
 
-a{
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-  text-decoration:none;
-  z-index: 10;
+
+a {
+  /* margin:0; */
+  /* padding:4px; */
+  /* font-size:100%;   */
+  /* vertical-align:baseline; */
+  /* background:transparent; */
+  /* text-decoration:none; */
+  /* background-image: url('../js/img/green_paper.jpg'); */
+  /* background-image: url('../js/img/green_paper_chill.jpg'); */
+  /* background-image: url('../js/img/foil_small_4.jpg'); */
+  /* background-size: contain; */
+  /* z-index: 10; */
 }
 
 mark{
@@ -108,15 +113,39 @@ canvas{
 }
 
 ::selection {
-  background: #2c6ee5;
-  color: #faf45c;
+  background: #71d8ff;
+  color: #6b4253;
 }
 
 ::-moz-selection {
-  background: #2c6ee5;
-  color: #faf45c;
+  background: #71d8ff;
+  color: #6b4253;
 }
 
+#kathNameImg {
+  max-width: 100%;
+  max-height: 100%;
+  animation: jello 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+#kathNameImg:hover{
+  animation-play-state: running;
+}
+
+#kathPortrait {
+  position: fixed;
+  right:-2%;
+  bottom:-2%;
+  max-width: 14%;
+  max-width: 20%;
+  animation: jello 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+#kathPortrait:hover{
+  animation-play-state: running;
+}
 
 /* ---- particles.js container ---- */
 
@@ -125,7 +154,10 @@ canvas{
   /* z-index: -1; */
   width: 100%;
   height: 100%;
-  background-color: #fdb9c8;
+  /* background-color: #fdb9c8; */
+  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
+  /* background-image: url('../js/img/other_paper_smooth_chiller.jpg'); */
+  /* background-image: url('../js/img/red_paper.png'); */
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -139,6 +171,9 @@ canvas{
   top: 0%;
   left: 0%;
   padding-bottom: 5%;
+  max-width: 150%;
+  margin-left: 25%;
+  margin-right: 25%;
   /* width: 75%; */
   /* left: 12.5%; */
   /* color: #000000; */
@@ -154,9 +189,13 @@ canvas{
 table {
   border-collapse: collapse;
   width: 100%;
+  /* background-image: url('../js/img/foil_big.jpg'); */
+  background-size: contain;  
 }
 
 #kathName {
+  background-image: url('../js/img/foil_small_3.jpg');
+  background-size: contain;  
   /* position: fixed; */
   /* left:40%; */
   font-size: 7em;
@@ -168,35 +207,168 @@ table {
 }
 
 th {
-  font-size: 3em;
-  font-family: 'Hina Mincho', serif;  
-  color: #e8534a;
+  /* font-size: 3em; */
+  /* font-family: 'Hina Mincho', serif;   */
+  /* color: #e8534a; */
   /* background-color: #fdb9c8; */
 }
 
-a {
-  font-size: 2em;
-  font-family: 'Hina Mincho', serif;
-  color: #161c6b;
-  background-color: #fdb9c8c9;
+/* table { */
+  /* background-image: url('../js/img/green_paper.jpg'); */
+  /* background-image: url('../js/img/foil.jpg'); */
+  /* background-image: url('../js/img/kath_portait.png'); */
+  /* background-image: url('../js/img/red_paper.png'); */
+  /* background-image: url('../js/img/foil_small_4.jpg'); */
+  /* background-size: contain;   */
+/* } */
+
+tr {
+  /* background-image: url('../js/img/green_paper.jpg'); */
+  /* background-image: url('../js/img/foil.jpg'); */
+  /* background-image: url('../js/img/kath_portait.png'); */
+  /* background-image: url('../js/img/red_paper.png'); */
+  /* background-image: url('../js/img/foil_small_4.jpg'); */
+  background-size: contain;
 }
 
-a:hover {
+.subhead {
+  font-size: 6em;
+  font-family: 'Raleway', sans-serif;
+  color: #f89243;
+  font-weight: bold;
+  /* background-image: url('../js/img/foil_small_3.jpg'); */
+  /* background-image: url('../js/img/red_paper.png'); */
+  /* background-image: url('../js/img/cloud.png'); */
+  background-size: contain;  
+  font-family: 'Bevan';  
+  /* font-family: 'Oswald', sans-serif;   */
+  /* font-family: 'Hina Mincho', serif; */
+
+  
+}
+
+#poemsTitle {
+  background-image: url('../js/img/poems_on_cloud.png');
+  background-size: contain;
+  max-width: 1000px;
+  max-height: 1000px;
+
+}
+
+.contentLink {
+  font-size: 35px;
+  padding: 5px 25px 5px 25px;
+  border-radius: 10px;
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Oswald', sans-serif;   */
+  color: #135d16;
+  background-color: #000000;
+  -webkit-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  -moz-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  text-decoration:none;
+}
+
+.contentLink:hover {
   background: #8dff55;
   color: #f76629;
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+  /* animation: bounce; */
+  /* animation-duration: 2s; don't forget to set a duration! */
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  /* -webkit-transform: scale (1.25) rotateZ(-360deg); */
+  /* -ms-transform: scale (1.25) rotateZ(-360deg); */
+  /* transform: scale(1.25) rotateZ(-360deg);   */
 
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 15px;
 }
 
 /* Start small screen section */
-@media only screen and (max-width: 430px) {}
+@media only screen and (max-width: 430px) {
+
+}
 
 
 /* ---- Start copied animations ---- */
 /* ---- End copied animations ---- */
+
+
+
+/* Copied paper effects */
+/* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+ .effect1{
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+}
+
+.effect1a{
+  -webkit-box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+  box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+}
+
+.effect1b{
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+}
+
+
+@keyframes jello {
+  from, 11.1%, to {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+};
