@@ -32,21 +32,6 @@ blockquote:before,blockquote:after,q:before,q:after{
   content:none
 }
 
-
-a {
-  /* margin:0; */
-  /* padding:4px; */
-  /* font-size:100%;   */
-  /* vertical-align:baseline; */
-  /* background:transparent; */
-  /* text-decoration:none; */
-  /* background-image: url('../js/img/green_paper.jpg'); */
-  /* background-image: url('../js/img/green_paper_chill.jpg'); */
-  /* background-image: url('../js/img/foil_small_4.jpg'); */
-  /* background-size: contain; */
-  /* z-index: 10; */
-}
-
 mark{
   background-color:rgb(255, 0, 0);
   color:#000;
@@ -113,13 +98,13 @@ canvas{
 }
 
 ::selection {
-  background: #71d8ff;
-  color: #6b4253;
+  background: #64d728;
+  color: #d70f62;
 }
 
 ::-moz-selection {
-  background: #71d8ff;
-  color: #6b4253;
+  background: #64d728;
+  color: #d70f62;
 }
 
 #kathNameImg {
@@ -170,7 +155,6 @@ canvas{
   /* z-index: -1; */
   width: 100%;
   height: 100%;
-  /* background-color: #fdb9c8; */
   background-image: url('../js/img/purple_vignette.png');
   background-size: cover;
   background-position: 50% 50%;
@@ -203,46 +187,18 @@ canvas{
 table {
   border-collapse: collapse;
   width: 100%;
-  /* background-image: url('../js/img/foil_big.jpg'); */
   background-size: contain;  
 }
 
 #kathName {
   background-image: url('../js/img/foil_small_3.jpg');
   background-size: contain;  
-  /* position: fixed; */
-  /* left:40%; */
   font-size: 7em;
   font-family: 'Permanent Marker', cursive;
   color: #8dff55;
   text-decoration: underline;
   padding: 16px;
 
-}
-
-th {
-  /* font-size: 3em; */
-  /* font-family: 'Hina Mincho', serif;   */
-  /* color: #e8534a; */
-  /* background-color: #fdb9c8; */
-}
-
-/* table { */
-  /* background-image: url('../js/img/green_paper.jpg'); */
-  /* background-image: url('../js/img/foil.jpg'); */
-  /* background-image: url('../js/img/kath_portait.png'); */
-  /* background-image: url('../js/img/red_paper.png'); */
-  /* background-image: url('../js/img/foil_small_4.jpg'); */
-  /* background-size: contain;   */
-/* } */
-
-tr {
-  /* background-image: url('../js/img/green_paper.jpg'); */
-  /* background-image: url('../js/img/foil.jpg'); */
-  /* background-image: url('../js/img/kath_portait.png'); */
-  /* background-image: url('../js/img/red_paper.png'); */
-  /* background-image: url('../js/img/foil_small_4.jpg'); */
-  background-size: contain;
 }
 
 .subhead {
@@ -255,21 +211,8 @@ tr {
   border-radius: 100px;
   padding: 10px 20px 10px 20px;
   font-weight: bold;
-  /* background-image: url('../js/img/foil_small_3.jpg'); */
-  /* background-image: url('../js/img/red_paper.png'); */
-  /* background-image: url('../js/img/cloud.png'); */
   background-size: contain;  
   font-family: 'Bevan';  
-  /* font-family: 'Oswald', sans-serif;   */
-  /* font-family: 'Hina Mincho', serif; */
-}
-
-#poemsTitle {
-  background-image: url('../js/img/poems_on_cloud.png');
-  background-size: contain;
-  max-width: 1000px;
-  max-height: 1000px;
-
 }
 
 .contentLink {
@@ -278,7 +221,6 @@ tr {
   line-height: 2;
   border-radius: 10px;
   font-family: 'Hina Mincho', serif;
-  /* font-family: 'Oswald', sans-serif;   */
   color: #135d16;
   background-color: #000000;
   -webkit-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
@@ -290,14 +232,9 @@ tr {
 .contentLink:hover {
   background: #8dff55;
   color: #f76629;
-  /* animation: bounce; */
-  /* animation-duration: 2s; don't forget to set a duration! */
   -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
   -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
   box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
-  /* -webkit-transform: scale (1.25) rotateZ(-360deg); */
-  /* -ms-transform: scale (1.25) rotateZ(-360deg); */
-  /* transform: scale(1.25) rotateZ(-360deg);   */
 
 }
 

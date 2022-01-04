@@ -1,5 +1,3 @@
-// TODO programatically mess with borders and stuff
-
 const c_COLOR_PAIRS = [
   {"background": "#224fb1", "color": "#c1ffff"},
   {"background": "#fffd97", "color": "#7d70d5"},
