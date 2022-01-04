@@ -143,6 +143,22 @@ canvas{
   animation-play-state: paused;
 }
 
+#poemImg {
+  width: 400px;
+}
+
+#comicsImg {
+  width: 450px;
+}
+
+#booksImg {
+  width: 425px;
+}
+
+#interviewImg {
+  width: 600px;
+}
+
 #kathPortrait:hover{
   animation-play-state: running;
 }
@@ -156,6 +172,12 @@ canvas{
   height: 100%;
   /* background-color: #fdb9c8; */
   background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
+  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
+  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
+  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
+  /* background-image: url('../js/img/paper_fun/insanity_blue_pink_dots.jpg'); */
+  /* background-image: url('../js/img/paper_fun/whiteish_paper_smooth_chiller.jpg'); */
+  background-image: url('../js/img/paper_fun/whitepinnkpurplevignette.png');
   /* background-image: url('../js/img/other_paper_smooth_chiller.jpg'); */
   /* background-image: url('../js/img/red_paper.png'); */
   background-size: cover;
@@ -172,8 +194,8 @@ canvas{
   left: 0%;
   padding-bottom: 5%;
   max-width: 150%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
   /* width: 75%; */
   /* left: 12.5%; */
   /* color: #000000; */
@@ -232,9 +254,14 @@ tr {
 }
 
 .subhead {
-  font-size: 6em;
+  font-size: 7em;
   font-family: 'Raleway', sans-serif;
-  color: #f89243;
+  color: #fffe1f;
+  background-color: #fbc8ca;
+  border: 12px dashed #2162c0;
+  display: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
   font-weight: bold;
   /* background-image: url('../js/img/foil_small_3.jpg'); */
   /* background-image: url('../js/img/red_paper.png'); */
@@ -243,8 +270,6 @@ tr {
   font-family: 'Bevan';  
   /* font-family: 'Oswald', sans-serif;   */
   /* font-family: 'Hina Mincho', serif; */
-
-  
 }
 
 #poemsTitle {
@@ -256,8 +281,9 @@ tr {
 }
 
 .contentLink {
-  font-size: 35px;
+  font-size: 25px;
   padding: 5px 25px 5px 25px;
+  line-height: 2;
   border-radius: 10px;
   font-family: 'Hina Mincho', serif;
   /* font-family: 'Oswald', sans-serif;   */
@@ -288,14 +314,114 @@ th, td {
   padding: 15px;
 }
 
-/* Start small screen section */
-@media only screen and (max-width: 430px) {
-
+.blownUpFont {
+  font-size: 35px;
 }
 
+/* Start mid screen section */
+@media only screen and (max-width: 1050px) {
+  
+  #poemImg {
+    width: 375px;
+  }
+  
+  #comicsImg {
+    width: 325px;
+  }
+  
+  #booksImg {
+    width: 325px;
+  }
+  
+  #interviewImg {
+    width: 425px;
+  }
 
-/* ---- Start copied animations ---- */
-/* ---- End copied animations ---- */
+  .contentLink {
+    font-size: 22px;
+  }  
+
+  .blownUpFont {
+    font-size: 28px;
+  }  
+}
+/* end mid screen section */
+
+
+/* Start small screen section */
+@media only screen and (max-width: 795px) {
+  
+  #frontOfParticles {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #poemImg {
+    width: 300px;
+  }
+  
+  #comicsImg {
+    width: 275px;
+  }
+  
+  #booksImg {
+    width: 276px;
+  }
+  
+  #interviewImg {
+    width: 300px;
+  }
+
+  .contentLink {
+    font-size: 18px;
+  }
+
+  .blownUpFont {
+    font-size: 24px;
+  }
+
+  #kathPortrait {
+    bottom:-1%;
+  }  
+
+}
+/* end small screen section */
+
+
+/* Start tiny screen section */
+@media only screen and (max-width: 399px) {
+  
+  #frontOfParticles {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #poemImg {
+    width: 250px;
+  }
+  
+  #comicsImg {
+    width: 225px;
+  }
+  
+  #booksImg {
+    width: 225px;
+  }
+  
+  #interviewImg {
+    width: 250px;
+  }
+
+  .contentLink {
+    font-size: 14px;
+  }
+
+  .blownUpFont {
+    font-size: 18px;
+  }
+
+}
+/* end tiny screen section */
 
 
 

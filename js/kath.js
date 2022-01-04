@@ -8,13 +8,16 @@ const c_COLOR_PAIRS = [
   {"background": "#5dd2f0", "color": "#703d54"},
   {"background": "#f77e27", "color": "#2d3738"},
   {"background": "#fcdc2b", "color": "#f53030"},
-
+  {"background": "#83c14a", "color": "#3d6a3e"},
+  
   
   {"background": "#c1ffff", "color": "#224fb1"},
   {"background": "#7d70d5", "color": "#fffd97"},
   {"background": "#fbc03f", "color": "#fffe04"},
   {"background": "#703d54", "color": "#5dd2f0"},
-  {"background": "#f53030", "color": "#fcdc2b"}  
+  {"background": "#f53030", "color": "#fcdc2b"},
+  {"background": "#3d6a3e", "color": "#83c14a"},
+  
 ];
 
 const c_BORDER_STYLES = [
@@ -56,8 +59,7 @@ $(".contentLink").hover(function() {
   $(this).css("border-color", colorPair.color);
   $(this).css("border-width", String(getRandomInt(8, 0)) + "px");
   $(this).css("border-style", getRandBorderStyle());
-  // $(this).css("font-size", String(getRandomInt(20, 35)) + "px");
-  $(this).css("font-size", String(45) + "px");
+  $(this).addClass("blownUpFont");
 
 });
 
