@@ -171,15 +171,7 @@ canvas{
   width: 100%;
   height: 100%;
   /* background-color: #fdb9c8; */
-  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
-  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
-  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
-  background-image: url('../js/img/pink_paper_smooth_chiller.jpg');
-  /* background-image: url('../js/img/paper_fun/insanity_blue_pink_dots.jpg'); */
-  /* background-image: url('../js/img/paper_fun/whiteish_paper_smooth_chiller.jpg'); */
-  background-image: url('../js/img/paper_fun/whitepinnkpurplevignette.png');
-  /* background-image: url('../js/img/other_paper_smooth_chiller.jpg'); */
-  /* background-image: url('../js/img/red_paper.png'); */
+  background-image: url('../js/img/purple_vignette.png');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
