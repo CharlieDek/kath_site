@@ -303,6 +303,7 @@ th, td {
 
   .contentLink {
     font-size: 18px;
+    line-height: 2.4;
   }
 
   .blownUpFont {
@@ -343,6 +344,8 @@ th, td {
 
   .contentLink {
     font-size: 14px;
+    line-height: 2.6;
+
   }
 
   .blownUpFont {
