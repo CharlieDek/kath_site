@@ -32,16 +32,6 @@ blockquote:before,blockquote:after,q:before,q:after{
   content:none
 }
 
-a{
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-  text-decoration:none;
-  z-index: 10;
-}
-
 mark{
   background-color:rgb(255, 0, 0);
   color:#000;
@@ -108,15 +98,55 @@ canvas{
 }
 
 ::selection {
-  background: #2c6ee5;
-  color: #faf45c;
+  background: #64d728;
+  color: #d70f62;
 }
 
 ::-moz-selection {
-  background: #2c6ee5;
-  color: #faf45c;
+  background: #64d728;
+  color: #d70f62;
 }
 
+#kathNameImg {
+  max-width: 100%;
+  max-height: 100%;
+  animation: jello 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+#kathNameImg:hover{
+  animation-play-state: running;
+}
+
+#kathPortrait {
+  position: fixed;
+  right:-2%;
+  bottom:-2%;
+  max-width: 14%;
+  max-width: 20%;
+  animation: jello 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+#poemImg {
+  width: 400px;
+}
+
+#comicsImg {
+  width: 450px;
+}
+
+#booksImg {
+  width: 425px;
+}
+
+#interviewImg {
+  width: 600px;
+}
+
+#kathPortrait:hover{
+  animation-play-state: running;
+}
 
 /* ---- particles.js container ---- */
 
@@ -125,7 +155,7 @@ canvas{
   /* z-index: -1; */
   width: 100%;
   height: 100%;
-  background-color: #fdb9c8;
+  background-image: url('../js/img/purple_vignette.png');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -139,6 +169,9 @@ canvas{
   top: 0%;
   left: 0%;
   padding-bottom: 5%;
+  max-width: 150%;
+  margin-left: 20%;
+  margin-right: 20%;
   /* width: 75%; */
   /* left: 12.5%; */
   /* color: #000000; */
@@ -154,11 +187,12 @@ canvas{
 table {
   border-collapse: collapse;
   width: 100%;
+  background-size: contain;  
 }
 
 #kathName {
-  /* position: fixed; */
-  /* left:40%; */
+  background-image: url('../js/img/foil_small_3.jpg');
+  background-size: contain;  
   font-size: 7em;
   font-family: 'Permanent Marker', cursive;
   color: #8dff55;
@@ -167,36 +201,229 @@ table {
 
 }
 
-th {
-  font-size: 3em;
-  font-family: 'Hina Mincho', serif;  
-  color: #e8534a;
-  /* background-color: #fdb9c8; */
+.subhead {
+  font-size: 7em;
+  font-family: 'Raleway', sans-serif;
+  color: #fffe1f;
+  background-color: #fbc8ca;
+  border: 12px dashed #2162c0;
+  display: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  background-size: contain;  
+  font-family: 'Bevan';  
 }
 
-a {
-  font-size: 2em;
+.contentLink {
+  font-size: 25px;
+  padding: 5px 25px 5px 25px;
+  line-height: 2;
+  border-radius: 10px;
   font-family: 'Hina Mincho', serif;
-  color: #161c6b;
-  background-color: #fdb9c8c9;
+  color: #135d16;
+  background-color: #000000;
+  -webkit-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  -moz-box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  box-shadow: 0 5px 3px -3px rgb(82, 82, 82);
+  text-decoration:none;
 }
 
-a:hover {
+.contentLink:hover {
   background: #8dff55;
   color: #f76629;
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
 
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 15px;
 }
 
+.blownUpFont {
+  font-size: 35px;
+}
+
+/* Start mid screen section */
+@media only screen and (max-width: 1050px) {
+  
+  #poemImg {
+    width: 375px;
+  }
+  
+  #comicsImg {
+    width: 325px;
+  }
+  
+  #booksImg {
+    width: 325px;
+  }
+  
+  #interviewImg {
+    width: 425px;
+  }
+
+  .contentLink {
+    font-size: 22px;
+  }  
+
+  .blownUpFont {
+    font-size: 28px;
+  }  
+}
+/* end mid screen section */
+
+
 /* Start small screen section */
-@media only screen and (max-width: 430px) {}
+@media only screen and (max-width: 795px) {
+  
+  #frontOfParticles {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #poemImg {
+    width: 300px;
+  }
+  
+  #comicsImg {
+    width: 275px;
+  }
+  
+  #booksImg {
+    width: 276px;
+  }
+  
+  #interviewImg {
+    width: 300px;
+  }
+
+  .contentLink {
+    font-size: 18px;
+  }
+
+  .blownUpFont {
+    font-size: 24px;
+  }
+
+  #kathPortrait {
+    bottom:-1%;
+  }  
+
+}
+/* end small screen section */
 
 
-/* ---- Start copied animations ---- */
-/* ---- End copied animations ---- */
+/* Start tiny screen section */
+@media only screen and (max-width: 399px) {
+  
+  #frontOfParticles {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #poemImg {
+    width: 250px;
+  }
+  
+  #comicsImg {
+    width: 225px;
+  }
+  
+  #booksImg {
+    width: 225px;
+  }
+  
+  #interviewImg {
+    width: 250px;
+  }
+
+  .contentLink {
+    font-size: 14px;
+  }
+
+  .blownUpFont {
+    font-size: 18px;
+  }
+
+}
+/* end tiny screen section */
+
+
+
+/* Copied paper effects */
+/* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+ .effect1{
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+}
+
+.effect1a{
+  -webkit-box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+  box-shadow: 10px 0px 6px -6px rgb(82, 82, 82);
+}
+
+.effect1b{
+  -webkit-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+  box-shadow: 0 10px 6px -6px rgb(82, 82, 82);
+}
+
+
+@keyframes jello {
+  from, 11.1%, to {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+};

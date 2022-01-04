@@ -1,4 +1,65 @@
-// TODO programatically mess with borders
+const c_COLOR_PAIRS = [
+  {"background": "#224fb1", "color": "#c1ffff"},
+  {"background": "#fffd97", "color": "#7d70d5"},
+  {"background": "#f64042", "color": "#473334"},
+  {"background": "#fffe04", "color": "#fbc03f"},
+  {"background": "#5dd2f0", "color": "#703d54"},
+  {"background": "#f77e27", "color": "#2d3738"},
+  {"background": "#fcdc2b", "color": "#f53030"},
+  {"background": "#83c14a", "color": "#3d6a3e"},
+  
+  
+  {"background": "#c1ffff", "color": "#224fb1"},
+  {"background": "#7d70d5", "color": "#fffd97"},
+  {"background": "#fbc03f", "color": "#fffe04"},
+  {"background": "#703d54", "color": "#5dd2f0"},
+  {"background": "#f53030", "color": "#fcdc2b"},
+  {"background": "#3d6a3e", "color": "#83c14a"},
+  
+];
+
+const c_BORDER_STYLES = [
+  "dotted",
+  "dotted",
+  "solid",
+  "double",
+  "dashed",
+  "dashed"
+];
+
+function getRandBorderStyle() {
+  return c_BORDER_STYLES[Math.floor(Math.random() * c_BORDER_STYLES.length)];
+}
+
+function getRandColorPair() {
+  return c_COLOR_PAIRS[Math.floor(Math.random() * c_COLOR_PAIRS.length)];
+}
+
+function getRandomInt(max, offset) {
+  return Math.floor(Math.random() * max) + offset;
+}
+
+function setRandomColors() {
+  $(".contentLink").each(function(index, element) {
+    const colorPair = getRandColorPair();
+    $(this).css("background-color", colorPair.background);
+    $(this).css("color", colorPair.color);
+    $(this).css("border-color", colorPair.color);
+    $(this).css("border-width", String(getRandomInt(8, 0)) + "px");
+    $(this).css("border-style", getRandBorderStyle());
+  });  
+}
+
+$(".contentLink").hover(function() {
+  const colorPair = getRandColorPair();
+  $(this).css("background-color", colorPair.background);
+  $(this).css("color", colorPair.color);
+  $(this).css("border-color", colorPair.color);
+  $(this).css("border-width", String(getRandomInt(8, 0)) + "px");
+  $(this).css("border-style", getRandBorderStyle());
+  $(this).addClass("blownUpFont");
+
+});
 
 particlesJS('particles-js', {
     "particles": {
@@ -110,3 +171,6 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
   });
+
+
+setRandomColors();
