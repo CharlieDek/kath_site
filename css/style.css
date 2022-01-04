@@ -302,12 +302,12 @@ th, td {
   }
 
   .contentLink {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 2.4;
   }
 
   .blownUpFont {
-    font-size: 24px;
+    font-size: 19px;
   }
 
   #kathPortrait {
@@ -343,13 +343,13 @@ th, td {
   }
 
   .contentLink {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2.6;
 
   }
 
   .blownUpFont {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 }
