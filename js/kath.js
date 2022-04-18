@@ -58,7 +58,6 @@ $(".contentLink").hover(function() {
   $(this).css("border-width", String(getRandomInt(8, 0)) + "px");
   $(this).css("border-style", getRandBorderStyle());
   $(this).addClass("blownUpFont");
-
 });
 
 
